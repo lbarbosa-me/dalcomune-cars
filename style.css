@@ -1,0 +1,81 @@
+/* Aplica o fundo em todo o corpo da página */
+body {
+    background-color: #faf0e7; /* Cor de fundo */
+    color: #7b090c; /* Cor do texto */
+    font-family: 'Roboto', Arial, sans-serif; /* Fonte básica */
+    margin: 0;
+    padding: 0;
+}
+
+/* Estiliza o header com o nome da empresa */
+header {
+    background-color: #7b090c; /* Cor de fundo */
+    padding: 10px; /* Padding para o nome da empresa */
+    text-align: center; /* Centraliza o conteúdo dentro do header */
+
+}
+
+.marca-img {
+    width: 100%; /* Ajusta a imagem para ocupar 100% da largura do contêiner */
+    max-width: 500px; /* Limita a largura máxima da imagem */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+/* Estiliza os blocos de veículos */
+.veiculos-bloco {
+    background-color: #7b090c;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 colunas iguais */
+    gap: 20px; /* Espaço entre os cartões */
+    padding: 0 10px; /* Remove as bordas laterais */
+    overflow-y: auto; /* Barra de rolagem vertical */
+    max-height: 100vh; /* Altura máxima para a seção */
+}
+
+/* Estiliza cada cartão de veículo */
+.veiculo-info {
+    background-color: #faf0e7; /* Cor de fundo dos cartões */
+    color: #7b090c; /* Cor do texto dentro dos cartões */
+    padding: 10px 10px; /* Menos padding para reduzir o tamanho */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Sombra suave para destacar o cartão */
+    border-radius: 5px; /* Bordas arredondadas */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Distribui o conteúdo uniformemente */
+    transition: transform 1.5ms ease; /* Transição suave */
+}
+
+.veiculo-info:hover {
+    transform: translateY(-2px); /* Levanta o cartão ao passar o mouse */
+}
+
+.veiculo-info img {
+    width: 100%; /* Ocupa toda a largura disponível do cartão */
+    height: 400px; /* Define a altura fixa da imagem */
+    object-fit: contain; /* Ajusta a imagem sem cortar */
+    border-radius: 5px; /* Bordas arredondadas nas imagens */
+}
+
+/* Estiliza os detalhes dentro dos veículos */
+.veiculo-detalhes h3 {
+    margin: 10px 0 5px;
+    color: #7b090c;
+    font-size: 25px;
+}
+
+.veiculo-detalhes p {
+    margin: 2px 0;
+    font-size: 20px;
+    text-justify: start;
+    align-items: first baseline;
+}
+
+/* Informações autorais */
+.autorais-info {
+    text-align: center;
+    color: #faf0e7;
+    font-size: 18px;
+    background-color: #7b090c;
+
+}
