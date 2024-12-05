@@ -98,3 +98,49 @@ section#veiculos {
     padding: 5px; /* Ou ajuste o padding conforme necessário */
 }
 
+
+/* Add viewport meta tag to your HTML file first */
+@media screen and (max-width: 1200px) {
+    .veiculos-bloco {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        padding: 15px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .veiculos-bloco {
+        grid-template-columns: 1fr;
+        padding: 10px;
+    }
+
+    .veiculo-info img {
+        height: 300px;
+    }
+
+    .veiculo-detalhes h3 {
+        font-size: 20px;
+    }
+
+    .veiculo-detalhes p {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .marca-img {
+        width: 100%;
+    }
+
+    .veiculo-info img {
+        height: 250px;
+    }
+
+    .veiculo-detalhes h3 {
+        font-size: 18px;
+    }
+
+    .veiculo-detalhes p {
+        font-size: 14px;
+    }
+}
