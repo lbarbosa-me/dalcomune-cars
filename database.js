@@ -2,17 +2,19 @@ const carDatabase = {
     vehicles: [
         {
             id: 1,
-            brand: "Toyota",
-            model: "Corolla",
-            year: "2024",
-            price: "R$ 150.000",
+            brand: "Renaut",
+            model: "Sandero",
+            color: "Preto",
+            year: "2018",
+            price: "R$ 18.000",
             image: "./images/carro1.jpeg",
-            description: "Sedan executivo"
+            description: "Unico Dono com pouca kilomatragem, poucos detalhes e IPVA 2025 pago."
         },
         {
             id: 2,
-            brand: "Honda",
-            model: "Civic",
+            brand: "Fiat",
+            model: "Journey",
+            color: "Prata",
             year: "2024",
             price: "R$ 160.000",
             image: "./images/carro2.jpeg",
@@ -22,6 +24,7 @@ const carDatabase = {
             id: 3,
             brand: "Honda",
             model: "Civic",
+            color: "Prata",
             year: "2024",
             price: "R$ 160.000",
             image: "./images/carro3.jpeg",
@@ -29,9 +32,10 @@ const carDatabase = {
         },
         {
             id: 4,
-            brand: "Honda",
-            model: "Civic",
-            year: "2024",
+            brand: "Ford",
+            model: "Fusion",
+            color: "Preto",
+            year: "2018",
             price: "R$ 160.000",
             image: "./images/carro4.jpeg",
             description: "Sedan esportivo"

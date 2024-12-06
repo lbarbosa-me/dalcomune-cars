@@ -9,6 +9,7 @@ function loadVehicles() {
                     <h3>${vehicle.brand} ${vehicle.model}</h3>
                     <p>Ano: ${vehicle.year}</p>
                     <p>Preço: ${vehicle.price}</p>
+                    <p>Cor: ${vehicle.color}</p>
                     <p>${vehicle.description}</p>
                 </div>
             </div>

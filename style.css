@@ -16,35 +16,31 @@ header {
     position:static;
     width: 100%;
 }
-
 section#veiculos {
     margin: 0;
     padding: 0;
 }
 
-
 .marca-img {
-    width: 400px; /* Ajusta a imagem para ocupar 100% da largura do contêiner */
-    max-width: 100%; /* Limita a largura máxima da imagem */
-    height: max-content; /* Mantém a proporção da imagem */
+    width: 400px;
+    max-width: 100%;
+    height: max-content;
 }
 
-/* Estiliza os blocos de veículos */
 .veiculos-bloco {
     background-color: #F0F8FF;
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 2 colunas iguais */
+    grid-template-columns: repeat(2, 1fr);
     justify-content: space-between;
-    padding: 0 10px; /* Remove as bordas laterais */
-    overflow-y: auto; /* Barra de rolagem vertical */
-    height: 100vh; /* Altura máxima para a seção */
+    padding: 0 10px;
+    overflow-y: auto;
+    gap: 20px;
 }
 
-/* Estiliza cada cartão de veículo */
 .veiculo-info {
-    background-color: #F0F8FF; /* Cor de fundo dos cartões */
-    color: #708090; /* Cor do texto dentro dos cartões */
-    padding: 10px   ; /* Menos padding para reduzir o tamanho */
+    background-color: #F0F8FF;
+    color: #708090;
+    padding: 10px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Sombra suave para destacar o cartão */
     border-radius: 5px; /* Bordas arredondadas */
     text-align: center;
@@ -60,13 +56,13 @@ section#veiculos {
 
 .veiculo-info img {
     width:100%; /* Ocupa toda a largura disponível do cartão */
-    height: 400px; /* Define a altura fixa da imagem */
+    height: 600px; /* Define a altura fixa da imagem */
     object-fit:cover; /* Ajusta a imagem sem cortar */
     border-radius: 2% ;    
 }
 
 .veiculo-info:hover {
-    background-color: #939596;
+    background-color: #626262;
     font-size: 18px;
     color: #F0F8FF;
 }
@@ -74,7 +70,7 @@ section#veiculos {
 /* Estiliza os detalhes dentro dos veículos */
 .veiculo-detalhes h3 {
     margin: 10px 0 5px 0;
-    color: #FFD700	;
+    color: #000000	;
     font-size: 25px;
     border-radius: 10%;
     width: fit-content;
