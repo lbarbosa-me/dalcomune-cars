@@ -2,96 +2,103 @@ const carDatabase = {
     vehicles: [
         {
             id: 1,
-            brand: "Renaut",
-            model: "Sandero",
-            color: "Preto",
-            year: "2018",
-            price: "R$ 18.000",
-            image: "./images/carro1.jpeg",
-            description: "Unico Dono com pouca kilomatragem, poucos detalhes e IPVA 2025 pago."
+            brand: "Chevrolet",
+            model: "Montana",
+            color: "Branco",
+            year: "2017",
+            price: "R$ 22.000",
+            image: "./images/chev-montana-branco.jpeg",
+            description: "Unico Dono com pouca kilomatragem, poucos detalhes e docs OK!."
         },
         {
             id: 2,
-            brand: "Fiat",
-            model: "Journey",
+            brand: "Volkswagen",
+            model: "Saveiro",
             color: "Prata",
-            year: "2024",
-            price: "R$ 160.000",
-            image: "./images/carro2.jpeg",
-            description: "Sedan esportivo"
+            year: "2022",
+            price: "R$ 28.000",
+            image: "./images/chev-saveiro-branca.jpeg",
+            description: "Pick-up 4x4."
         },
         {
             id: 3,
-            brand: "Honda",
-            model: "Civic",
+            brand: "Fiat",
+            model: "Journey",
             color: "Prata",
-            year: "2024",
+            year: "2017",
             price: "R$ 160.000",
-            image: "./images/carro2.jpeg",
-            description: "Sedan esportivo"
+            image: "./images/fiat-journey-prata.jpeg",
+            description: "SUV 4x4 automática."
         },
         {
             id: 4,
-            brand: "Toyota",
-            model: "Hilux",
+            brand: "Ford",
+            model: "Fusion",
+            color: "Preto",
             year: "2018",
-            price: "R$ 57.000",
-            image: "./images/carro5.jpeg",
-            description: "Camionete 4x4 automática"
+            price: "R$ 47.000",
+            image: "./images/ford-fusion-preto.jpeg",
+            description: "Camionete 4x4 automática."
         },
         {
             id: 5,
-            brand: "Fiat",
-            model: "Journey",
-            year: "2018",
-            price: "R$ 37.000",
-            image: "./images/carro5.jpeg",
-            description: "SUV 4x4 automática"
+            brand: "Renaut",
+            model: "Kwid",
+            color: "Preto",
+            year: "2021",
+            price: "R$ 24.000",
+            image: "./images/renaut-kwid-preto.jpeg",
+            description: "Hatch compacto com 5 portas."
         },
         {
             id: 6,
             brand: "Renaut",
             model: "Sandero",
+            color: "Prata",
             year: "2016",
             price: "R$ 18.000",
-            image: "./images/carro6.jpeg",
-            description: "Hatch compacto com 5 portas"
+            image: "./images/renaut-sandero-prata.jpeg",
+            description: "Hatch compacto com 5 portas."
         },
         {
             id: 7,
-            brand: "Volkswagen",
-            model: "Saveiro",
-            year: "2020",
-            price: "R$ 17.000",
-            image: "./images/carro7.jpeg",
-            description: "Pick-up 4x4 preparada para uso comercial."
+            brand: "Renaut",
+            model: "Sandero",
+            color: "Prata",
+            year: "2018",
+            price: "R$ 20.000",
+            image: "./images/renaut-sandero-prata2.jpeg",
+            description: "Hatch compacto com 5 portas."
         },
         {
             id: 8,
-            brand: "Chevrolet",
-            model: "Montana",
-            year: "2015",
-            price: "R$ 20.700",
-            image: "./images/carro8.jpeg",
-            description: "Pick-up 4x4"
+            brand: "Renaut",
+            model: "Sandero",
+            color: "Preto",
+            year: "2016",
+            price: "R$ 19.700",
+            image: "./images/renaut-sandero-preto.jpeg",
+            description: "Hatch compacto com 5 portas."
         },
         {
             id: 9,
-            brand: "Renaut",
-            model: "Sandeiro",
-            year: "2014",
-            price: "R$ 19.250",
-            image: "./images/carro9.jpeg",
-            description: "Hatch compacto 4 portas"
+            brand: "Toyota",
+            model: "Hilux",
+            color: "Bronze",
+            year: "2017",
+            price: "R$ 39.250",
+            image: "./images/toyota-hilux-bronze.jpeg",
+            description: "Camionete 4x4 automática."
         },
         {
             id: 10,
-            brand: "Renaut",
-            model: "Sandero",
-            year: "2016",
-            price: "R$ 17.300",
-            image: "./images/carro10.jpeg",
-            description: "Hatch compacto"
+            brand: "Volkswagen",
+            model: "Saveiro",
+            color: "Branca",
+            year: "2018",
+            price: "R$ 27.300",
+            image: "./images/volks-saveiro-branca-comercial.jpeg",
+            description: "Pick-up 4x4 - Ja preparada para uso comercial."
         }
     ],
     
