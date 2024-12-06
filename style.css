@@ -10,21 +10,35 @@ body {
 }
 
 /* Estiliza o header com o nome da empresa */
+
 header {
-    background-color: #7b090c; /* Cor de fundo */
-    text-align: center; /* Centraliza o conteúdo dentro do header */
-    position:static;
-    width: 100%;
+    background-color: #708090; /* Cor de fundo do header */
+    color: #F0F8FF; /* Cor do texto no header */
+    text-align: center;
+    padding: 10px 0; /* Espaçamento interno */
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave */
 }
+
+header h1 {
+    font-size: 36px; /* Tamanho do texto */
+    margin: 0;
+    padding: 10px 0; /* Espaçamento interno */
+    align-items: center;
+}
+
+header h3 {
+    font-size: 20px; /* Tamanho do texto */
+    margin: 0;
+    padding: 10px 0; /* Espaçamento interno */
+    align-items: center;
+}
+
 section#veiculos {
     margin: 0;
     padding: 0;
-}
-
-.marca-img {
-    width: 400px;
-    max-width: 100%;
-    height: max-content;
 }
 
 .veiculos-bloco {
@@ -140,3 +154,47 @@ section#veiculos {
         font-size: 14px;
     }
 }
+
+.sort-select {
+    /* Size and positioning */
+    width: 200px;
+    padding: 10px;
+    margin: 20px;
+    
+    /* Style */
+    background-color: #708090;
+    color: #F0F8FF;
+    border: 2px solid #626262;
+    border-radius: 5px;
+    
+    /* Font */
+    font-family: 'Roboto', Arial, sans-serif;
+    font-size: 16px;
+    
+    /* Hover effect */
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.sort-select:hover {
+    background-color: #4c4b4b;
+    border-color: #708090;
+}
+
+/* Style for options dropdown */
+.sort-select option {
+    background-color: #F0F8FF;
+    color: #708090;
+    padding: 5px;
+}
+
+.sort-container {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    text-align: center;     
+    padding: 5px;
+}
+

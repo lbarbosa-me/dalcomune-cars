@@ -7,14 +7,21 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header> 
-        <img class="marca-img" src="/images/brand-name.png" alt="brand-name">
+    <header>
+        <h1>Dalcomune Carros</h1>
+        <h3>Compra e Venda de Usados</h3>
     </header>
     <main>
+        <div class="sort-container">
+            <select class="sort-select" onchange="updateDisplay(this.value)">
+                <option value="price">Ordenar por Preço</option>
+                <option value="year">Ordenar por Ano</option>
+                <option value="brand">Ordenar por Marca</option>
+                <option value="model">Ordenar por Modelo</option>
+            </select>
+        </div>
         <section id="veiculos">
-            <div class="veiculos-bloco">
-                <!-- Vehicle cards will be dynamically inserted here by script.js -->
-            </div>
+            <div class="veiculos-bloco"></div>
             <div class="autorais-info">
                 Todos os direitos reservados - Lumo Webpages • 2024 
             </div>
