@@ -11,11 +11,15 @@ function loadVehicles() {
                 <div class="veiculo-info">
                     <img src="${vehicle.image}" alt="${vehicle.brand} ${vehicle.model}">
                     <div class="veiculo-detalhes">
-                        <h3>${vehicle.brand} ${vehicle.model}</h3>
-                        <p>Ano: ${vehicle.year}</p>
-                        <p>Preço: ${vehicle.price}</p>
-                        <p>Cor: ${vehicle.color}</p>
-                        <p>${vehicle.description}</p>
+                        <div class="detalhes-principais">
+                            <h3>${vehicle.brand} ${vehicle.model}</h3>
+                            <p>Ano: ${vehicle.year}</p>
+                            <p>Cor: ${vehicle.color}</p>
+                            <p class="descricao">${vehicle.description}</p>
+                        </div>
+                        <div class="preco-destaque">
+                            <span>${vehicle.price}</span>
+                        </div>
                     </div>
                 </div>
             `;
@@ -43,11 +47,15 @@ function updateDisplay(criteria) {
                 <div class="veiculo-info">
                     <img src="${vehicle.image}" alt="${vehicle.brand} ${vehicle.model}">
                     <div class="veiculo-detalhes">
-                        <h3>${vehicle.brand} ${vehicle.model}</h3>
-                        <p>Ano: ${vehicle.year}</p>
-                        <p>Preço: ${vehicle.price}</p>
-                        <p>Cor: ${vehicle.color}</p>
-                        <p>${vehicle.description}</p>
+                        <div class="detalhes-principais">
+                            <h3>${vehicle.brand} ${vehicle.model}</h3>
+                            <p>Ano: ${vehicle.year}</p>
+                            <p>Cor: ${vehicle.color}</p>
+                            <p class="descricao">${vehicle.description}</p>
+                        </div>
+                        <div class="preco-destaque">
+                            <span>${vehicle.price}</span>
+                        </div>
                     </div>
                 </div>
             `;

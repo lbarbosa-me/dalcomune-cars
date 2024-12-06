@@ -6,7 +6,7 @@ const carDatabase = {
             model: "Montana",
             color: "Branco",
             year: "2017",
-            price: "R$ 22.000",
+            price: "R$ 26.500",
             image: "./images/chev-montana-branco.jpeg",
             description: "Unico Dono com pouca kilomatragem, poucos detalhes e docs OK!."
         },
@@ -14,9 +14,9 @@ const carDatabase = {
             id: 2,
             brand: "Volkswagen",
             model: "Saveiro",
-            color: "Prata",
+            color: "Branco",
             year: "2022",
-            price: "R$ 28.000",
+            price: "R$ 38.000",
             image: "./images/chev-saveiro-branca.jpeg",
             description: "Pick-up 4x4."
         },
@@ -26,7 +26,7 @@ const carDatabase = {
             model: "Journey",
             color: "Prata",
             year: "2017",
-            price: "R$ 160.000",
+            price: "R$ 37.000",
             image: "./images/fiat-journey-prata.jpeg",
             description: "SUV 4x4 automática."
         },
@@ -66,7 +66,7 @@ const carDatabase = {
             model: "Sandero",
             color: "Prata",
             year: "2018",
-            price: "R$ 20.000",
+            price: "R$ 22.500",
             image: "./images/renaut-sandero-prata2.jpeg",
             description: "Hatch compacto com 5 portas."
         },
@@ -86,7 +86,7 @@ const carDatabase = {
             model: "Hilux",
             color: "Bronze",
             year: "2017",
-            price: "R$ 39.250",
+            price: "R$ 49.900",
             image: "./images/toyota-hilux-bronze.jpeg",
             description: "Camionete 4x4 automática."
         },
@@ -103,24 +103,24 @@ const carDatabase = {
     ],
     
     sortVehicles: function(criteria) {
-        return this.vehicles.sort((a, b) => {
+        return [...this.vehicles].sort((a, b) => {
             switch(criteria) {
-                case 'price':
-                    const priceA = parseFloat(a.price.replace('R$ ', '').replace('.', ''))
-                    const priceB = parseFloat(b.price.replace('R$ ', '').replace('.', ''))
-                    return priceA - priceB
-                case 'year':
-                    return parseInt(a.year) - parseInt(b.year)
+                case 'price-desc':
+                    return parseFloat(b.price.replace('R$ ', '').replace('.', '')) - 
+                           parseFloat(a.price.replace('R$ ', '').replace('.', ''));
+                case 'price-asc':
+                    return parseFloat(a.price.replace('R$ ', '').replace('.', '')) - 
+                           parseFloat(b.price.replace('R$ ', '').replace('.', ''));
+                case 'year-desc':
+                    return parseInt(b.year) - parseInt(a.year);
                 case 'brand':
-                    return a.brand.localeCompare(b.brand)
-                case 'model':
-                    return a.model.localeCompare(b.model)
+                    return a.brand.localeCompare(b.brand);
                 default:
-                    return 0
+                    return 0;
             }
-        })
+        });
     }
-}
+};
 
 // Exemplso de sorts:
 const sortedByPrice = carDatabase.sortVehicles('price');

@@ -12,13 +12,12 @@ body {
 /* Estiliza o header com o nome da empresa */
 
 header {
-    background-color: #708090; /* Cor de fundo do header */
+    background-color: #587797; /* Cor de fundo do header */
     color: #F0F8FF; /* Cor do texto no header */
-    text-align: center;
+    text-align: center; /* Centraliza o texto */
     padding: 10px 0; /* Espaçamento interno */
-    position: sticky;
-    top: 0;
-    z-index: 100;
+    top: 0; /* Posiciona o header no topo */
+    z-index: 100; /* Garante que o header fique acima do conteúdo */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave */
 }
 
@@ -37,68 +36,91 @@ header h3 {
 }
 
 section#veiculos {
-    margin: 0;
-    padding: 0;
+    margin: auto; /* Espaçamento externo */
+    padding: auto; /* Espaçamento interno */
 }
 
 .veiculos-bloco {
-    background-color: #F0F8FF;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    justify-content: space-between;
-    padding: 0 10px;
-    overflow-y: auto;
-    gap: 20px;
+    gap: 10px;
+    padding: 10px;
 }
 
 .veiculo-info {
     background-color: #F0F8FF;
-    color: #708090;
-    padding: 10px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Sombra suave para destacar o cartão */
-    border-radius: 5px; /* Bordas arredondadas */
-    text-align: center;
+    color: #587797;
+    padding: 15px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between; /* Distribui o conteúdo uniformemente */
-    transition: transform 1.5ms ease; /* Transição suave */
+    transition: transform 1.5s ease;/* Efeito de elevação ao passar o mouse */
 }
 
 .veiculo-info:hover {
-    transform: translateY(2px); /* Levanta o cartão ao passar o mouse */
+    transform: translateY(5px);/* Efeito de elevação ao passar o mouse */
 }
 
 .veiculo-info img {
-    width:100%; /* Ocupa toda a largura disponível do cartão */
-    height: 600px; /* Define a altura fixa da imagem */
-    object-fit:cover; /* Ajusta a imagem sem cortar */
-    border-radius: 2% ;    
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 5px;
 }
 
 .veiculo-info:hover {
-    background-color: #626262;
+    background-color: #84aed9;
     font-size: 18px;
     color: #F0F8FF;
 }
 
-/* Estiliza os detalhes dentro dos veículos */
-.veiculo-detalhes h3 {
-    margin: 10px 0 5px 0;
-    color: #000000	;
-    font-size: 25px;
-    border-radius: 10%;
-    width: fit-content;
-    padding: 10px; /* Adiciona espaçamento interno nas bordas */
-    border: 2px solid #ccc; /* Exemplo de borda visível */
+.veiculo-detalhes {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 15px 0;
 }
 
-.veiculo-detalhes p {
-    text-align: left; /* Alinha o texto à esquerda */
-    margin: 2px 0;
-    font-size: 20px;
-    text-justify: start;
+.detalhes-principais {
+    flex: 2;
+    text-align: left;
 }
 
+.detalhes-principais h3 {
+    margin: 0 0 10px 0;
+    color: #000000;
+    font-size: 24px;
+}
+
+.detalhes-principais p {
+    margin: 5px 0;
+    font-size: 18px;
+    color: #000000;
+}
+
+.preco-destaque {
+    text-align: right;
+    flex: 1%;
+    color: #F0F8FF;
+    font-weight: bold;
+}
+
+.preco-destaque span {
+    font-size: 30px;
+    font-weight: bold;
+    color: #708090;
+    background-color: #f5f5f5;
+    padding: 10px 15px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.descricao {
+    font-style: italic;
+    color: #2d2c2c;
+    margin-top: 10px;
+}
 /* Informações autorais */
 .autorais-info {
     justify-content: center;
@@ -165,15 +187,16 @@ section#veiculos {
     background-color: #708090;
     color: #F0F8FF;
     border: 2px solid #626262;
-    border-radius: 5px;
+    border-radius: 10px;
     
     /* Font */
     font-family: 'Roboto', Arial, sans-serif;
-    font-size: 16px;
+    font-size: 20px;
+    font-weight: 500;
     
     /* Hover effect */
     cursor: pointer;
-    transition: all 0.3s ease;
+    transition: all .5s ease;
 }
 
 .sort-select:hover {

@@ -14,10 +14,9 @@
     <main>
         <div class="sort-container">
             <select class="sort-select" onchange="updateDisplay(this.value)">
-                <option value="price">Ordenar por Preço</option>
-                <option value="year">Ordenar por Ano</option>
-                <option value="brand">Ordenar por Marca</option>
-                <option value="model">Ordenar por Modelo</option>
+                <option value="default">Ordenar por...</option>
+                <option value="price-desc">Maior Valor</option>
+                <option value="price-asc">Menor Valor</option>
             </select>
         </div>
         <section id="veiculos">
@@ -27,8 +26,6 @@
             </div>
         </section>
     </main>
-    <script src="https://static.elfsight.com/platform/platform.js" async></script>
-    <div class="elfsight-app-c0282b0c-da9e-4ca0-84e9-7bf1fc6f3cef" data-elfsight-app-lazy></div>
     <script src="database.js"></script>
     <script src="script.js"></script>
     <script>
