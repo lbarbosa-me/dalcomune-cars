@@ -18,7 +18,7 @@ header {
     padding: 10px 0; /* Espaçamento interno */
     top: 0; /* Posiciona o header no topo */
     z-index: 100; /* Garante que o header fique acima do conteúdo */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4); /* Sombra suave */
 }
 
 header h1 {
@@ -38,6 +38,7 @@ header h3 {
 section#veiculos {
     margin: auto; /* Espaçamento externo */
     padding: auto; /* Espaçamento interno */
+
 }
 
 .veiculos-bloco {
@@ -51,15 +52,16 @@ section#veiculos {
     background-color: #F0F8FF;
     color: #587797;
     padding: 15px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
     display: flex;
     flex-direction: column;
     transition: transform 1.5s ease;/* Efeito de elevação ao passar o mouse */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Sombra suave */
+
 }
 
 .veiculo-info:hover {
-    transform: translateY(5px);/* Efeito de elevação ao passar o mouse */
+    transform: translateY(2px);/* Efeito de elevação ao passar o mouse */
 }
 
 .veiculo-info img {
@@ -83,8 +85,10 @@ section#veiculos {
 }
 
 .detalhes-principais {
-    flex: 2;
-    text-align: left;
+    flex: 3;
+    padding: 5px;
+    margin: 10px;
+    text-align: flex-start;
 }
 
 .detalhes-principais h3 {
@@ -99,26 +103,20 @@ section#veiculos {
     color: #000000;
 }
 
-.preco-destaque {
-    text-align: right;
-    flex: 1%;
-    color: #F0F8FF;
-    font-weight: bold;
-}
-
 .preco-destaque span {
-    font-size: 20px;
+    font-size: 25px;
     font-weight: bold;
-    color: #708090;
-    background-color: #f5f5f5;
-    padding: 10px 15px;
+    color: #000000;
+    background-color: #e2de00f6;
+    margin-top: 20px;
+    padding: 15px;
     border-radius: 5px;
-    display: inline-block;
+    display: flex;
 }
 
 .descricao {
     font-style: italic;
-    color: #2d2c2c;
+    color: #000000;
     margin-top: 10px;
 }
 /* Informações autorais */
@@ -126,10 +124,9 @@ section#veiculos {
     justify-content: center;
     text-align: center;
     font-size: 16px;
-    margin: 0; /* Remove espaçamento externo */
-    padding: 5px; /* Ou ajuste o padding conforme necessário */
+    margin: 0; 
+    padding: 5px; 
 }
-
 
 /* Add viewport meta tag to your HTML file first */
 @media screen and (max-width: 1200px) {
